@@ -1,0 +1,17 @@
+com\fluxshopper\controller\ProductController.class
+com\fluxshopper\service\PaymentService.class
+com\fluxshopper\config\CorsConfig.class
+com\fluxshopper\model\ShoppingRequest.class
+com\fluxshopper\service\PolicyEngineService.class
+com\fluxshopper\service\ProductCatalogService.class
+com\fluxshopper\model\Product.class
+com\fluxshopper\controller\SupplierController.class
+com\fluxshopper\service\ShoppingService.class
+com\fluxshopper\model\ShoppingPolicy.class
+com\fluxshopper\controller\ShoppingController.class
+com\fluxshopper\FluxShopperApplication.class
+com\fluxshopper\model\ShoppingReceipt.class
+com\fluxshopper\model\PaymentResult.class
+com\fluxshopper\service\ProductMatcherService.class
+com\fluxshopper\service\ProductCatalogService$1.class
+com\fluxshopper\config\CorsConfig$1.class

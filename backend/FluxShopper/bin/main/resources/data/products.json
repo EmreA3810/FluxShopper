@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "name": "Siyah Tisort",
+        "category": "Top",
+        "price": 25,
+        "tags": [
+            "casual",
+            "basic",
+            "conference"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Beyaz Gomlek",
+        "category": "Top",
+        "price": 45,
+        "tags": [
+            "formal",
+            "business",
+            "conference"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Polo Tisort",
+        "category": "Top",
+        "price": 35,
+        "tags": [
+            "smart-casual",
+            "conference"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Slim Fit Pantolon",
+        "category": "Bottom",
+        "price": 65,
+        "tags": [
+            "formal",
+            "business",
+            "conference"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Kot Pantolon",
+        "category": "Bottom",
+        "price": 60,
+        "tags": [
+            "casual",
+            "daily"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Chino Pantolon",
+        "category": "Bottom",
+        "price": 55,
+        "tags": [
+            "smart-casual",
+            "conference"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Deri Ceket",
+        "category": "Outerwear",
+        "price": 120,
+        "tags": [
+            "casual",
+            "stylish"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Blazer",
+        "category": "Outerwear",
+        "price": 110,
+        "tags": [
+            "formal",
+            "conference",
+            "business"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Spor Ayakkabi",
+        "category": "Shoes",
+        "price": 90,
+        "tags": [
+            "casual",
+            "conference",
+            "comfortable"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Oxford Ayakkabi",
+        "category": "Shoes",
+        "price": 95,
+        "tags": [
+            "formal",
+            "business"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Loafer",
+        "category": "Shoes",
+        "price": 80,
+        "tags": [
+            "smart-casual",
+            "conference"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Kol Saati",
+        "category": "Accessory",
+        "price": 75,
+        "tags": [
+            "formal",
+            "conference"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Sirt Cantasi",
+        "category": "Accessory",
+        "price": 50,
+        "tags": [
+            "conference",
+            "comfortable"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Deri Kemer",
+        "category": "Accessory",
+        "price": 30,
+        "tags": [
+            "formal"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Gozluk",
+        "category": "Accessory",
+        "price": 40,
+        "tags": [
+            "casual",
+            "stylish"
+        ]
+    }
+]
