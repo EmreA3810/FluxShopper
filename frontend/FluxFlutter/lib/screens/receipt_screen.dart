@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/shopping_receipt.dart';
-import 'home_screen.dart';
+import '../main.dart';
 
 class ReceiptScreen extends StatelessWidget {
   final ShoppingReceipt receipt;
 
   const ReceiptScreen({super.key, required this.receipt});
+
+  String _truncate(String value, int maxChars) {
+    if (value.length <= maxChars) {
+      return value;
+    }
+    return '${value.substring(0, maxChars)}...';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +78,9 @@ class ReceiptScreen extends StatelessWidget {
             onPressed: () {
               Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(builder: (context) => const HomeScreen()),
+                MaterialPageRoute(
+                  builder: (context) => const MainNavigationScreen(),
+                ),
                 (route) => false,
               );
             },
@@ -403,7 +412,7 @@ class ReceiptScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'TX: ${payment.transactionHash.substring(0, 16)}...',
+                  'TX: ${_truncate(payment.transactionHash, 16)}',
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.blue.shade700,
@@ -452,13 +461,10 @@ class ReceiptScreen extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
-          _buildPolicyRow(
-            'Policy ID',
-            receipt.policy.policyId.substring(0, 24) + '...',
-          ),
+          _buildPolicyRow('Policy ID', _truncate(receipt.policy.policyId, 24)),
           _buildPolicyRow(
             'Agent Address',
-            receipt.policy.agentAddress.substring(0, 20) + '...',
+            _truncate(receipt.policy.agentAddress, 20),
           ),
           _buildPolicyRow('Purpose', receipt.policy.purpose),
           _buildPolicyRow('Expires', _formatDateTime(receipt.policy.expiresAt)),
@@ -508,7 +514,9 @@ class ReceiptScreen extends StatelessWidget {
             onPressed: () {
               Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(builder: (context) => const HomeScreen()),
+                MaterialPageRoute(
+                  builder: (context) => const MainNavigationScreen(),
+                ),
                 (route) => false,
               );
             },
